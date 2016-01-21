@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Wellcome to Create Your Universe</title>
+    <link rel="stylesheet" href="/pages/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/pages/css/style.css"/>
+    <meta name="viewport" content="width=device-width,
+									initial-scale=1.0,
+									maximum-scale=1.0,
+									user-scalable=no">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="header">
+                <img src="/pages/img/logo.png" alt="Logo"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h1 class="h1 text-center">Wellcome to Create your Universe</h1>
+        <div class="col-md-offset-4 col-md-4">
+            <form role="form" id="logForm">
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" id="login" placeholder="Enter your login"/>
+                        <input type="text" id="password" class="form-control margin-10"
+                               placeholder="Enter your password"/>
+                        <button type="submit" class="btn btn-primary col-md-12 margin-10">Sign in</button>
+                        <div class="btn btn-default col-md-12 margin-10" id="regButton">
+                            Registration
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <form role="form" id="regForm" method="post">
+                <div class="col-md-12">
+                    <div id="enteringLogin" class="">
+                        <input type="text" class="form-control margin-form-10" id="regLogin" name="regLogin"
+                               placeholder="Enter your login"/>
+                        <input type="password" class="form-control margin-form-10" id="regPassword" name="regPassword"
+                               placeholder="Enter your password"/>
+                        <input type="password" class="form-control margin-form-10" id="regPasswordConfirm"
+                               name="regPasswordConfirm" placeholder="Confirm your password"/>
+                        <button type="button" class="col-md-12 btn btn-primary margin-form-10">Continue</button>
+                    </div>
+                    <div id="enteringInfo">
+                        <input type="text" class="form-control margin-form-10" id="firstName" name="firstName"
+                               placeholder="First name"/>
+                        <input type="text" class="form-control margin-form-10" id="lastName" name="lastName"
+                               placeholder="Last name"/>
+                        <input type="text" class="form-control margin-form-10" id="birthDay" name="birthDay"
+                               placeholder="Birthday"/>
+                        <input type="text" class="form-control margin-form-10" id="eMail" name="eMail"
+                               placeholder="E-mail"/>
+                        <input type="text" class="form-control margin-form-10" id="hobbies" name="hobbies"
+                               placeholder="Hobbies"/>
+                        <button type="submit" class="col-md-12 btn btn-primary margin-form-10">Register</button>
+                    </div>
+                    <div class="btn btn-default col-md-12 margin-10" id="signButton">
+                        Sign in
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="/pages/scripts/jquery-1.11.3.min.js"></script>
+<script src="/pages/scripts/bootstrap.min.js"></script>
+<script src="/pages/scripts/script.js"></script>
+</body>
+</html>
