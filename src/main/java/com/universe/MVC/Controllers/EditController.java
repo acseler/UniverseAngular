@@ -27,7 +27,7 @@ import java.util.Map;
 @Controller
 @Scope("session")
 @RequestMapping("/edit")
-public class EditController {
+public class  EditController {
 
     @Autowired
     private ControllerTools controllerTools;
