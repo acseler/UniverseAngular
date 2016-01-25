@@ -47,7 +47,7 @@ public class RegistrationController {
             attributes.put("messageInfo", messageInfoDAO.getMessageInfo(account));
             return new ModelAndView("home", attributes);
         }
-        return new ModelAndView("wellcome");
+        return new ModelAndView("pages/index.html");
     }
 
     @RequestMapping(method = RequestMethod.POST)

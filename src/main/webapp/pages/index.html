@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head lang="en">
     <meta charset="UTF-8">
     <title>Wellcome to Create Your Universe</title>
@@ -10,15 +10,9 @@
 									maximum-scale=1.0,
 									user-scalable=no">
 </head>
-<body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="header">
-                <img src="/pages/img/logo.png" alt="Logo"/>
-            </div>
-        </div>
-    </div>
+<body ng-app="CreateYourUniverse">
+<div class="container" ng-controller="registrationController">
+    <div ng-include="template.url"></div>
     <div class="row">
         <h1 class="h1 text-center">Wellcome to Create your Universe</h1>
         <div class="col-md-offset-4 col-md-4">
@@ -70,5 +64,7 @@
 <script src="/pages/scripts/jquery-1.11.3.min.js"></script>
 <script src="/pages/scripts/bootstrap.min.js"></script>
 <script src="/pages/scripts/script.js"></script>
+<script src="/pages/scripts/angular.min.js"></script>
+<script src="/pages/scripts/app.js"></script>
 </body>
 </html>
