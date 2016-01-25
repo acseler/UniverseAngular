@@ -18,10 +18,6 @@
                   p:objectMapper-ref="objectMapper"/>
         </mvc:message-converters>
     </mvc:annotation-driven>
-    <!--For static pages-->
-    <!--<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
-    <!--<property name="prefix" value="/"/>-->
-    <!--</bean>-->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     </bean>
 

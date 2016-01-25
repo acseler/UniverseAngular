@@ -47,7 +47,7 @@ public class RegistrationController {
             attributes.put("messageInfo", messageInfoDAO.getMessageInfo(account));
             return new ModelAndView("home", attributes);
         }
-        return new ModelAndView("pages/index.html");
+        return new ModelAndView("/pages/index.html");
     }
 
     @RequestMapping(method = RequestMethod.POST)
@@ -72,16 +72,6 @@ public class RegistrationController {
         } else {
             return new ModelAndView("wellcome");
         }
-    }
-
-    @RequestMapping(value = "/checkLogin/{login}", method = RequestMethod.GET)
-    public @ResponseBody String checkLogin(@PathVariable String login) {
-        return registryDAO.checkLoginName(login);
-    }
-
-    @RequestMapping(value = "/checkLogin/{login}", method = RequestMethod.POST)
-    public @ResponseBody String checkLoginPost(@PathVariable String login) {
-        return registryDAO.checkLoginName(login);
     }
 
 }

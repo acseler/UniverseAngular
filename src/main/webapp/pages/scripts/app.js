@@ -4,5 +4,6 @@
 var app = angular.module('CreateYourUniverse', []);
 
 app.controller('registrationController', ['$scope', function ($scope) {
-    $scope.template = {name: 'header', url: 'pages/header.html'};
+    $scope.headerTemplate = {name: 'header', url: 'pages/header.html'};
 }]);
+
