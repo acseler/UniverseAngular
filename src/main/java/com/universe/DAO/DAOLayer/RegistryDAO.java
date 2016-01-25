@@ -38,9 +38,9 @@ public class RegistryDAO {
      * @return - Line, which contains true or false
      * */
     @Transactional
-    public String checkLoginName(String name) {
+    public boolean checkLoginName(String name) {
         List<?> logins = new ArrayList<>();
         logins = hibernateTemplate.find("from Login where login = ?", name);
-        return logins.isEmpty() ? "true" : "false";
+        return logins.isEmpty();
     }
 }

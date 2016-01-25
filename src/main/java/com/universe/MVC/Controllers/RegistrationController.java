@@ -39,15 +39,8 @@ public class RegistrationController {
     private ResourceBundleMessageSource messageSource;
 
     @RequestMapping(method = RequestMethod.GET)
-    public ModelAndView getWellcomePage(HttpSession session) {
-        if (null != session.getAttribute("account")) {
-            Map<String, Object> attributes = new HashMap<>();
-            Account account = (Account) session.getAttribute("account");
-            attributes.put("account", account);
-            attributes.put("messageInfo", messageInfoDAO.getMessageInfo(account));
-            return new ModelAndView("home", attributes);
-        }
-        return new ModelAndView("/pages/index.html");
+    public String getWellcomePage() {
+        return "pages/index.html";
     }
 
     @RequestMapping(method = RequestMethod.POST)
