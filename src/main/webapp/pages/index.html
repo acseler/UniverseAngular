@@ -31,37 +31,35 @@
                     </div>
                 </div>
             </form>
-            <form ng-hide="logRegFlag" role="form" id="regForm" method="post" enctype="multipart/form-data">
+            <form role="form" id="regForm" method="post" enctype="multipart/form-data" action="/registration" ng-hide="logRegFlag">
                 <div class="col-md-12">
-                    <div class="row">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div>
-                                    <input type="text" class="form-control margin-10" id="regLogin" name="login"
-                                           placeholder="Enter your login" required/>
-                                </div>
+                    <div class="row padding-0">
+                        <div class="col-md-6">
+                            <div>
+                                <input type="text" class="form-control margin-10" id="regLogin" name="login"
+                                       placeholder="Enter your login" required/>
                             </div>
                         </div>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div>
-                                    <input type="password" class="form-control margin-10" id="regPassword"
-                                           name="password"
-                                           placeholder="Enter your password" required/>
-                                </div>
-                                <div>
-                                    <input type="password" class="form-control margin-10" id="regPasswordConfirm"
-                                           name="regPasswordConfirm" placeholder="Confirm your password" required/>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-6 margin-bottom-0">
-                            <div class="alert alert-danger padding-5-all margin-10" id="LoginWarning">
+                        <div class="col-md-6">
+                            <div class="alert alert-danger padding-5-all margin-10 margin-bottom-0" id="LoginWarning">
                                 This login is already exist
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <input type="password" class="form-control margin-10" id="regPassword"
+                                       name="password"
+                                       placeholder="Enter your password" required/>
+                            </div>
+                            <div>
+                                <input type="password" class="form-control margin-10" id="regPasswordConfirm"
+                                       name="regPasswordConfirm" placeholder="Confirm your password" required/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
                             <div class="alert alert-danger padding-5-all margin-10" id="PasswordWarning">
                                 Password checking error
                             </div>
@@ -71,35 +69,36 @@
                         <div id="universeInfo" class="col-md-6">
                             <div>
                                 <input type="text" class="form-control margin-10" id="universeName" name="universeName"
-                                       placeholder="Universe name"/>
+                                       placeholder="Universe name" required value="asd"/>
                             </div>
                             <div>
                             <textarea class="form-control margin-10" id="description" name="description"
-                                      placeholder="Short description"></textarea>
+                                      placeholder="Short description" required>asdas</textarea>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div id="enteringInfo" class="col-md-6">
                             <input type="text" class="form-control margin-10" id="firstName" name="firstName"
-                                   placeholder="First name" required/>
+                                   placeholder="First name" required value="asd"/>
                             <input type="text" class="form-control margin-10" id="lastName" name="lastName"
-                                   placeholder="Last name" required/>
+                                   placeholder="Last name" required value="123"/>
                             <label for="birthDayDay" class="control-label margin-10">Birthday</label>
                             <input type="text" class="form-control margin-10" id="birthDayDay" name="birthDayDay"
-                                   placeholder="Day" pattern="0[1-9]|[12][0-9]|3[01]" required/>
+                                   placeholder="Day" pattern="0[1-9]|[12][0-9]|3[01]" required value="12"/>
                             <input type="text" class="form-control margin-10" id="birthDayMounth"
                                    name="birthDayMounth"
-                                   placeholder="Mounth" pattern="0[1-9]|1[012]" required/>
+                                   placeholder="Mounth" pattern="0[1-9]|1[012]" required value="12"/>
                             <input type="text" class="form-control margin-10" id="birthDayYear" name="birthDayYear"
-                                   placeholder="Year" pattern="(19|20)\d\d" required/>
+                                   placeholder="Year" pattern="(19|20)\d\d" required value="2000"/>
                             <input type="text" class="form-control margin-10" id="eMail" name="eMail"
-                                   placeholder="E-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}^$|^.*@.*\..*$" required/>
+                                   placeholder="E-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}^$|^.*@.*\..*$" required value="asd@asd.ry"/>
                             <textarea class="form-control margin-10" id="hobbies" name="hobbies"
-                                      placeholder="Hobbies" required></textarea>
+                                      placeholder="Hobbies" required>asdas</textarea>
                             <input type="text" class="form-control margin-10" id="profession" name="profession"
-                                   placeholder="Profession" required/>
-                            <input type="file" class="form-control margin-10" id="avatar" name="avatar" required/>
+                                   placeholder="Profession" required value="sdsds"/>
+                            <input type="file" class="form-control margin-10" id="avatar" name="avatar" />
+
                             <button type="submit" class="col-md-12 btn btn-primary margin-10" id="registrationFinal"
                                     ng-click="checkRegisterForm()">
                                 Register
@@ -120,6 +119,7 @@
 <script src="pages/scripts/jquery-1.11.3.min.js"></script>
 <script src="pages/scripts/bootstrap.min.js"></script>
 <script src="pages/scripts/script.js"></script>
+<!--<script src="pages/scripts/angular-animate.min.js"></script>-->
 <script src="pages/scripts/angular.min.js"></script>
 <script src="pages/scripts/app.js"></script>
 </body>

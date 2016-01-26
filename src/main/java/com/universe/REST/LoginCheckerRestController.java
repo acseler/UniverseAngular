@@ -20,6 +20,7 @@ public class LoginCheckerRestController {
 
     @RequestMapping(method = RequestMethod.GET)
     public boolean checkLogin(@PathVariable String login) {
+        System.out.println("login " + login);
         return registryDAO.checkLoginName(login);
     }
 }
